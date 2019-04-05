@@ -15,9 +15,9 @@ But for now, it suits me well.
 - zsh-syntax-hightlighting  
 - spf13-vim  
 ## Color Scheme  
-zsh theme is RobbiRussule(which i can't remember exactally)  
-iTerm2's color presets is Tango Dark.  
-I change vim's color in vim.rc.local  
+- zsh theme is robbyrussell
+- iTerm2's color presets is Tango Dark.  
+- I change vim's color in vim.rc.local  
 ## Usage  
 - run pullFromHome.sh to update dot files to this repo.  
 - run pushToHome.sh to apply dot files to a new mac.  
