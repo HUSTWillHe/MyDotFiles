@@ -1,0 +1,4 @@
+let g:solarized_termtrans=16
+let g:solarized_contrast="normal"
+let g:solarized_visibility="normal"
+inoremap jj <Esc>
