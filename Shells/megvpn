@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+import os
+import pyotp
+import argparse
+
+
+SECRET = "FBJKAULLJMSA4CWO"
+# PASSWORD =
+
+
+def run(args):
+    # sites = 'vpn-slice wiki.megvii-inc.com git-core.megvii-inc.com jira.megvii-inc.com myhome.megvii-inc.com git-pd.megvii-inc.com bj-a-internal.brainpp.cn'
+    pwd = pyotp.TOTP(SECRET).now()
+    if args.p:
+        print('code: %s' % pwd)
+        os.system('echo "%s" | pbcopy' % pwd)
+        return
+    # cmd = "sudo openconnect --authgroup=Office --user=heliwei --passwd-on-stdin -s '%s' vpn.megvii-inc.com " % (sites)
+    cmd = "sudo openconnect --authgroup=Office --user=heliwei --passwd-on-stdin vpn.megvii-inc.com -b"
+    print('running cmd: %s' % cmd)
+    cmd = 'read -p \"Passwd: \" -s password && echo $password"%s" | ' % (pwd) + cmd
+    os.system(cmd)
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-p', action='store_true')
+    args = parser.parse_args()
+    run(args)
+# vim: ts=4 sw=4 sts=4 expandtab
