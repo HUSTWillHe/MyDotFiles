@@ -4,17 +4,18 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/heliwei/.oh-my-zsh"
 
-#My Settings Here
+#Heliwei's Settings Here
 ZSH_DISABLE_COMPFIX=true
 source ~/.bash_profile
 #To Use Android Studio's JDK
 #export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home'
 export JAVA_HOME='/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home'
 export GRADLE_HOME='/Applications/Android Studio.app/Contents/gradle/gradle-4.10.1/bin'
-export NDK_HOME='/Users/heliwei/Library/Android/sdk/ndk-bundle'
+export NDK_HOME='/Users/heliwei/Library/Android/sdk/ndk-bundle-r17c'
 export BIN_UTILS='/usr/local/opt/binutils/bin'
-export PATH=${PATH}:${GRADLE_HOME}:${NDK_HOME}:${BIN_UTILS}
-#My Settings End
+export MY_UTILS='/Users/heliwei/Workspace/Projects/ShellScripts/'
+export PATH=${PATH}:${GRADLE_HOME}:${NDK_HOME}:${BIN_UTILS}:${MY_UTILS}
+#Heliwei's Settings End
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -75,7 +76,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git zsh-autosuggestions
+  git zsh-autosuggestions z 
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -86,7 +87,8 @@ source /Users/heliwei/Downloads/Git/zsh-syntax-highlighting/zsh-syntax-highlight
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+ export LANG=zh_CN.UTF-8
+ export LC_ALL="zh_CN.UTF-8"
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -109,6 +111,5 @@ source /Users/heliwei/Downloads/Git/zsh-syntax-highlighting/zsh-syntax-highlight
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
- [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh  
 
  eval $(thefuck --alias)
