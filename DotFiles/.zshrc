@@ -80,7 +80,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source /Users/heliwei/Downloads/Git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 
