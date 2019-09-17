@@ -11,10 +11,11 @@ source ~/.bash_profile
 #export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home'
 export JAVA_HOME='/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home'
 export GRADLE_HOME='/Applications/Android Studio.app/Contents/gradle/gradle-4.10.1/bin'
-export NDK_HOME='/Users/heliwei/Library/Android/sdk/ndk-bundle-r17c'
+export NDK_HOME='${HOME}/Library/Android/sdk/ndk-bundle-r17c'
 export BIN_UTILS='/usr/local/opt/binutils/bin'
-export MY_UTILS='/Users/heliwei/Workspace/Projects/ShellScripts/'
-export PATH=${PATH}:${GRADLE_HOME}:${NDK_HOME}:${BIN_UTILS}:${MY_UTILS}
+export MY_UTILS='${HOME}/Workspace/Projects/ShellScripts/'
+export BAZEL_HOME='${HOME}/bin'
+export PATH=${PATH}:${GRADLE_HOME}:${NDK_HOME}:${BIN_UTILS}:${MY_UTILS}:${BAZEL_HOME}
 #Heliwei's Settings End
 
 # Set name of the theme to load --- if set to "random", it will
