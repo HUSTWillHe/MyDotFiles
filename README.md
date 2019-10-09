@@ -1,8 +1,7 @@
 # My Dot Files
 ## Purpose  
-To back my dot files in case i change another mac  
-I am just a newer in this area, so there are lots of things to improve.  
-But for now, it suits me well.  
+To back my dot files to simply PC switching  
+
 ## Main Lists  
 - .vimrc  
 - .vimrc.local  
