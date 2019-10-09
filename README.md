@@ -1,6 +1,7 @@
 # My Dot Files
 ## Purpose  
-To back my dot files to simply PC switching  
+To back my dot files to simply PC switching.  
+When use pushToHome.sh, it will install oh-my-zsh ans spf13-vim automatically.  
 
 ## Main Lists  
 - .vimrc  
@@ -13,6 +14,7 @@ To back my dot files to simply PC switching
 - the fuck  
 - zsh-syntax-hightlighting  
 - spf13-vim  
+- tmux  
 ## Color Scheme  
 - zsh theme is robbyrussell
 - iTerm2's color presets is Tango Dark.  
